@@ -1,0 +1,34 @@
+
+package day5;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.WebElement;
+
+public class day5 {
+
+    public static void main(String[] args) {
+
+        WebDriver driver = new EdgeDriver();
+
+        driver.manage().window().maximize();
+
+        driver.get("https://the-internet.herokuapp.com/login");
+
+        // Normal XPath
+        driver.findElement(By.xpath("//input[@id='username']"));
+
+// Text-based XPath
+        driver.findElement(By.xpath("//button[.//i[contains(text(),'Login')]]"));
+
+// Attribute-based XPath
+        driver.findElement(By.xpath("//button[@type='submit']"));
+
+// Index-based XPath
+        driver.findElement(By.xpath("(//input)[1]"));
+
+        System.out.println("XPath practice completed");
+        driver.quit();
+    }
+}
