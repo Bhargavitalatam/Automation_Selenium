@@ -6,7 +6,7 @@
 
 ## About This Repository
 
-This repository showcases my practical learning and implementation of Selenium WebDriver concepts through structured daily coding exercises. It includes browser automation, WebDriver methods, web element handling, and other fundamental automation testing concepts.
+This repository showcases my practical learning and implementation of Selenium WebDriver concepts through structured daily coding exercises. It includes browser automation, WebDriver methods, web element handling, locators, assertions, and other fundamental automation testing concepts.
 
 ## Tech Stack
 
@@ -25,7 +25,10 @@ This repository showcases my practical learning and implementation of Selenium W
 | Day 01 | Selenium Fundamentals | Completed |
 | Day 02 | WebDriver Methods | Completed |
 | Day 03 | Web Element Types and Interactions | Completed |
-| Day 04 onwards | Upcoming Concepts | In Progress |
+| Day 04 | CSS Selectors | Completed |
+| Day 05 | XPath Locators | Completed |
+| Day 06 | WebElement Handling & Navigation | Completed |
+| Day 07 onwards | Upcoming Concepts | In Progress |
 
 ## Repository Structure
 
@@ -41,6 +44,15 @@ automation_selenium/
 ├── Day3/
 │   └── Web Element Types and Interactions
 │
+├── Day4/
+│   └── CSS Selectors
+│
+├── Day5/
+│   └── XPath Locators
+│
+├── Day6/
+│   └── WebElement Handling and Navigation
+│
 └── README.md
 ```
 
@@ -49,9 +61,11 @@ automation_selenium/
 - Selenium WebDriver Fundamentals
 - Browser Launch and Navigation
 - WebDriver Commands and Methods
-- Types of Web Elements
 - Web Element Identification
+- CSS Selectors and XPath
 - Web Element Interactions
+- Attribute Handling and Assertions
+- Dropdown Handling
 - Practical Browser Automation
 
 ## Objective
