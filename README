@@ -1,7 +1,31 @@
-# Automation Selenium
+# Selenium Automation Testing
 
-## Overview
-This repository contains my hands-on practice and daily coding exercises in **Selenium WebDriver using Java**. It documents my learning journey in automation testing through structured daily exercises and practical implementations.
+**A hands-on learning repository documenting my journey in test automation using Java and Selenium WebDriver.**
+
+---
+
+## About This Repository
+
+This repository showcases my practical learning and implementation of Selenium WebDriver concepts through structured daily coding exercises. It includes browser automation, WebDriver methods, web element handling, and other fundamental automation testing concepts.
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Java | Programming Language |
+| Selenium WebDriver | Browser Automation |
+| Maven | Dependency Management |
+| IntelliJ IDEA | Development Environment |
+| Git & GitHub | Version Control |
+
+## Learning Roadmap
+
+| Day | Topics | Progress |
+|---|---|---|
+| Day 01 | Selenium Fundamentals | Completed |
+| Day 02 | WebDriver Methods | Completed |
+| Day 03 | Web Element Types and Interactions | Completed |
+| Day 04 onwards | Upcoming Concepts | In Progress |
 
 ## Repository Structure
 
@@ -20,41 +44,22 @@ automation_selenium/
 └── README.md
 ```
 
-## Technologies and Tools
-- Java
-- Selenium WebDriver
-- Maven
-- IntelliJ IDEA
-- Git and GitHub
+## Key Learning Areas
 
-## Topics Covered
 - Selenium WebDriver Fundamentals
 - Browser Launch and Navigation
-- WebDriver Methods
-- Web Element Types
+- WebDriver Commands and Methods
+- Types of Web Elements
 - Web Element Identification
 - Web Element Interactions
-- Locators and Element Handling
+- Practical Browser Automation
 
-## Learning Progress
+## Objective
 
-| Day | Topics Covered | Status |
-|---|---|---|
-| Day 1 | Selenium Basics | Completed |
-| Day 2 | WebDriver Methods | Completed |
-| Day 3 | Web Element Types and Interactions | Completed |
-| Day 4 onwards | Upcoming Practice | In Progress |
-
-## Learning Objectives
-- Gain practical experience with Selenium WebDriver.
-- Understand browser automation using Java.
-- Learn to identify and interact with web elements.
-- Develop automation testing skills through hands-on coding.
-- Build a strong foundation in software test automation.
-
-## Purpose
-This repository serves as a structured record of my daily Selenium automation practice, technical learning, and continuous progress in software testing.
+To strengthen my software testing and automation skills through consistent hands-on practice, understand real-world browser automation workflows, and build a strong foundation in test automation.
 
 ---
 
-**Maintained by:** Satya Bhargavi Talatam
+**Author:** Satya Bhargavi Talatam
+
+*Learning, Practicing, and Building with Selenium WebDriver.*
