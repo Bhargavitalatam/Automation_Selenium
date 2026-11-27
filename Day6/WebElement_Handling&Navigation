@@ -1,0 +1,112 @@
+
+package day6;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class day6 {
+
+    public static void main(String[] args) {
+
+        WebDriver driver = new EdgeDriver();
+
+        driver.manage().window().maximize();
+
+        // 1. Navigate to website
+        driver.get("https://the-internet.herokuapp.com/");
+
+        // 2. Verify page title using Assert.assertEquals()
+        String expectedTitle = "The Internet";
+        String actualTitle = driver.getTitle();
+
+        Assert.assertEquals(expectedTitle, actualTitle);
+
+        System.out.println("Page title verified");
+
+        // 3. Navigate to Login page
+        driver.navigate().to("https://the-internet.herokuapp.com/login");
+
+        // 4. getAttribute()
+        WebElement username = driver.findElement(By.id("username"));
+
+        String type = username.getAttribute("type");
+
+        System.out.println("Username field type: " + type);
+
+        Assert.assertEquals("text", type);
+
+        // 5. isDisplayed()
+        boolean displayed = username.isDisplayed();
+
+        System.out.println("Username field displayed: " + displayed);
+
+        Assert.assertTrue(displayed);
+
+        // 6. Enter username and password
+        username.sendKeys("tomsmith");
+
+        driver.findElement(By.id("password"))
+                .sendKeys("SuperSecretPassword!");
+
+        // 7. Click Login button
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+        // 8. Navigate to Checkboxes page
+        driver.navigate().to("https://the-internet.herokuapp.com/checkboxes");
+
+        // 9. isSelected()
+        WebElement checkbox1 = driver.findElement(
+                By.xpath("(//input[@type='checkbox'])[1]")
+        );
+
+        boolean selected = checkbox1.isSelected();
+
+        System.out.println("Checkbox 1 selected: " + selected);
+
+        // Select checkbox if it is not already selected
+        if (!selected) {
+            checkbox1.click();
+        }
+
+        Assert.assertTrue(checkbox1.isSelected());
+
+        // 10. Navigate to Dropdown page
+        driver.navigate().to("https://the-internet.herokuapp.com/dropdown");
+
+        // 11. Dropdown handling
+        WebElement dropdownElement = driver.findElement(By.id("dropdown"));
+
+        Select dropdown = new Select(dropdownElement);
+
+        // Select by visible text
+        dropdown.selectByVisibleText("Option 1");
+
+        System.out.println("Selected option: " +
+                dropdown.getFirstSelectedOption().getText());
+
+        Assert.assertEquals(
+                "Option 1",
+                dropdown.getFirstSelectedOption().getText()
+        );
+
+        // 12. Browser navigation
+        driver.navigate().back();
+
+        System.out.println("Navigated back");
+
+        driver.navigate().forward();
+
+        System.out.println("Navigated forward");
+
+        driver.navigate().refresh();
+
+        System.out.println("Page refreshed");
+
+        // Close browser
+        driver.quit();
+    }
+}
