@@ -6,7 +6,7 @@
 
 ## About This Repository
 
-This repository showcases my practical learning and implementation of Selenium WebDriver concepts through structured daily coding exercises. It includes browser automation, WebDriver methods, web element handling, locators, assertions, and other fundamental automation testing concepts.
+This repository showcases my practical learning and implementation of Selenium WebDriver concepts through structured daily coding exercises. It covers browser automation, WebDriver methods, web element handling, locators, browser window management, frames, alerts, and other fundamental automation testing concepts.
 
 ## Tech Stack
 
@@ -28,7 +28,8 @@ This repository showcases my practical learning and implementation of Selenium W
 | Day 04 | CSS Selectors | Completed |
 | Day 05 | XPath Locators | Completed |
 | Day 06 | WebElement Handling & Navigation | Completed |
-| Day 07 onwards | Upcoming Concepts | In Progress |
+| Day 07 | Window Handling, Frames & Alerts | Completed |
+| Day 08 onwards | Upcoming Concepts | In Progress |
 
 ## Repository Structure
 
@@ -53,6 +54,9 @@ automation_selenium/
 ├── Day6/
 │   └── WebElement Handling and Navigation
 │
+├── Day7/
+│   └── Window Handling, Frames and Alerts
+│
 └── README.md
 ```
 
@@ -66,6 +70,10 @@ automation_selenium/
 - Web Element Interactions
 - Attribute Handling and Assertions
 - Dropdown Handling
+- Multiple Window and Tab Handling
+- Parent and Child Window Switching
+- Frame Handling and Frame Switching
+- JavaScript Alert Handling
 - Practical Browser Automation
 
 ## Objective
